@@ -1,0 +1,19 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav">
+    <app-sidenav-menu></app-sidenav-menu>
+  </mat-sidenav>
+ 
+  <div class="example-sidenav-content">    
+    <mat-toolbar color="primary">
+          <button mat-icon-button (click)="sidenav.open()">
+              <i class="material-icons">menu</i>
+          </button>
+          Welcome
+      </mat-toolbar>
+
+      <app-home></app-home>  
+
+    <p>This is the inside content</p>
+  </div>
+    
+  </mat-sidenav-container>

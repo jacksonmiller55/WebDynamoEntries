@@ -41,6 +41,14 @@ export class GuestListComponent implements OnInit {
     this.guest = new Guest();
     this.showGuestListBool = false;
   }
+
+  delete_guest(guesty: Guest){
+    
+    let index = this.guests.indexOf(guesty, 0);
+    if (index > -1) {
+    this.guests.splice(index, 1);
+    }
+  }
   
 
 

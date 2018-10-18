@@ -47,5 +47,7 @@
     <br> Address: {{g.address.street}}
     <br> {{g.address.city}}, {{g.address.state}} {{g.address.zipcode}}
     <br> {{g.guid}}
+    <mat-divider [vertical]="true"></mat-divider>
+    <button mat-button style="background-color:darkgray" (click)="delete_guest(guest);"> Delete</button>
   </mat-card>
 </div>

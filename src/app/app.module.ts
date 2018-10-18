@@ -7,16 +7,23 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GuestListComponent } from './guest-list/guest-list.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { GuestsService} from './guests.service'
-
+import { GuestsService} from './guests.service';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatSidenavModule } from '@angular/material';
+import { SidenavMenuComponent } from './sidenav-menu/sidenav-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GuestListComponent
+    GuestListComponent,
+    WelcomeComponent,
+    SidenavComponent,
+    SidenavMenuComponent
   ],
   imports: [
+    MatSidenavModule,
     BrowserModule,
     MaterialComponent,
     HttpClientModule,

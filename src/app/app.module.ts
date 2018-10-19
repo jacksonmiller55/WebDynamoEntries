@@ -11,7 +11,6 @@ import { GuestsService} from './guests.service';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material';
-import { SidenavMenuComponent } from './sidenav-menu/sidenav-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { SidenavMenuComponent } from './sidenav-menu/sidenav-menu.component';
     GuestListComponent,
     WelcomeComponent,
     SidenavComponent,
-    SidenavMenuComponent
   ],
   imports: [
     MatSidenavModule,

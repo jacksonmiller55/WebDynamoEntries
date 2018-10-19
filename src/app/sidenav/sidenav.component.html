@@ -1,6 +1,9 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav class="example-sidenav">
-    <app-sidenav-menu></app-sidenav-menu>
+    <mat-nav-list>
+      <a mat-list-item (click)="show_home();">Home</a>
+      <a mat-list-item (click)="show_guest_list();">Guest List</a>
+    </mat-nav-list>      
   </mat-sidenav>
  
   <div class="example-sidenav-content">    
@@ -10,9 +13,12 @@
           </button>
           Welcome
       </mat-toolbar>
-
-      <app-home></app-home>  
-
+      <div *ngIf="show_home_component">
+        <app-home></app-home>  
+      </div>
+      <div *ngIf="show_guest_list_component">
+        <app-guest-list></app-guest-list>
+      </div>
     <p>This is the inside content</p>
   </div>
     

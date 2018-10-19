@@ -5,14 +5,14 @@ import { GuestsService} from '../guests.service'
 
 
 @Component({
-  selector: 'app-guest-list',
-  templateUrl: './guest-list.component.html',
-  styleUrls: ['./guest-list.component.css']
+  selector: 'app-rsvp',
+  templateUrl: './rsvp.component.html',
+  styleUrls: ['./rsvp.component.css']
 })
-export class GuestListComponent implements OnInit {
+export class RSVPComponent implements OnInit {
   guest = new Guest();
   guests = new Array<Guest>();
-  addNewGuestBool = false;
+  addNewGuestBool = true;
   showGuestListBool = false;
   
   constructor(private guest_serve: GuestsService) {     

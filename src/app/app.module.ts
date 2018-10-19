@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GuestListComponent } from './guest-list/guest-list.component'
+import { RSVPComponent } from './rsvp/rsvp.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GuestsService} from './guests.service';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -16,7 +16,7 @@ import { MatSidenavModule } from '@angular/material';
   declarations: [
     AppComponent,
     HomeComponent,
-    GuestListComponent,
+    RSVPComponent,
     WelcomeComponent,
     SidenavComponent,
   ],

@@ -1,6 +1,9 @@
-<button mat-button style="background-color:darkgray" (click)="addNewGuestBool=!addNewGuestBool; new_Guest()"> New Guest</button>
-<button mat-button style="background-color:darkgray" (click)="postGuest(guest);"> Add</button>
-<mat-card *ngIf="addNewGuestBool">
+<div style="text-align:center">
+  <br>
+  <h1>RSVP</h1>
+  <button mat-button style="background-color:darkgray" (click)="new_Guest()"> New Guest</button>
+
+  <mat-card *ngIf="addNewGuestBool">
   <mat-form-field>
     <mat-label>First Name</mat-label>
     <input matInput [(ngModel)]="guest.firstName" placeholder="First Name" />
@@ -34,11 +37,13 @@
     <mat-label>Zipcode</mat-label>
     <input matInput [(ngModel)]="guest.address.zipcode" placeholder="51566" />
   </mat-form-field>
+  <br>
+  <button mat-button style="background-color:darkgray" (click)="postGuest(guest);"> Add</button>
 </mat-card>
 <br>
 <br>
 
-<mat-button-toggle (click)="showGuestListBool=!showGuestListBool;"> Show Guest List</mat-button-toggle>
+<!-- <mat-button-toggle (click)="showGuestListBool=!showGuestListBool;"> Show Guest List</mat-button-toggle>
 <div *ngIf="showGuestListBool">
   <mat-card *ngFor="let g of guests">
     Name: {{g.firstName}} {{g.lastName}}
@@ -51,3 +56,4 @@
     <button mat-button style="background-color:darkgray" (click)="delete_guest(guest);"> Delete</button>
   </mat-card>
 </div>
+</div> -->

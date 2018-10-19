@@ -2,7 +2,7 @@
   <mat-sidenav #sidenav class="example-sidenav">
     <mat-nav-list>
       <a mat-list-item (click)="show_home();">Home</a>
-      <a mat-list-item (click)="show_guest_list();">Guest List</a>
+      <a mat-list-item (click)="show_guest_list();">RSVP</a>
     </mat-nav-list>      
   </mat-sidenav>
  
@@ -17,7 +17,7 @@
         <app-home></app-home>  
       </div>
       <div *ngIf="show_guest_list_component">
-        <app-guest-list></app-guest-list>
+        <app-rsvp></app-rsvp>
       </div>
     <p>This is the inside content</p>
   </div>

@@ -9,8 +9,8 @@ import { AboutComponent } from './about/about.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material';
-import { RSVPService } from './services/rsvp-service.service';
 import { RSVPComponent } from './rsvp/rsvp.component';
+import { RegistryComponent } from './registry/registry.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { RSVPComponent } from './rsvp/rsvp.component';
     AboutComponent,
     SidenavComponent,
     RSVPComponent,
+    RegistryComponent,
   ],
   imports: [
     MatSidenavModule,
@@ -28,7 +29,7 @@ import { RSVPComponent } from './rsvp/rsvp.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [RSVPService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

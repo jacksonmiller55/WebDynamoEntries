@@ -1,4 +1,4 @@
-<div class="center-card">
+<!-- <div class="center-card">
   <mat-card class="card-image">
     <mat-card-header>
       <div mat-card-avatar class="card-header-image"></div>
@@ -13,5 +13,43 @@
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
     </mat-card-actions>
+  </mat-card>
+</div> -->
+<div class="center-card">
+  <mat-card class="card-image">
+    Guest
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="First name">
+      {{Guest.first_name}}
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last name">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Email address">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Phone Number">
+    </mat-form-field>
+    <br>
+    <br>
+    Address
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Street">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="City">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Zip code">
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-slide-toggle>Additional Guests</mat-slide-toggle>
+    <button mat-button (click)="postGuest(Guest)">About</button>
   </mat-card>
 </div>
